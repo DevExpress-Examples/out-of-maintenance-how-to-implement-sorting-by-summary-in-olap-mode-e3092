@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Default.aspx](./CS/ASPxPivotGrid_OLAPSortBySummary/Default.aspx) (VB: [Default.aspx](./VB/ASPxPivotGrid_OLAPSortBySummary/Default.aspx))
-* [Default.aspx.cs](./CS/ASPxPivotGrid_OLAPSortBySummary/Default.aspx.cs) (VB: [Default.aspx](./VB/ASPxPivotGrid_OLAPSortBySummary/Default.aspx))
+* [Default.aspx.cs](./CS/ASPxPivotGrid_OLAPSortBySummary/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxPivotGrid_OLAPSortBySummary/Default.aspx.vb))
 <!-- default file list end -->
 # How to implement Sorting by Summary in OLAP mode
 
