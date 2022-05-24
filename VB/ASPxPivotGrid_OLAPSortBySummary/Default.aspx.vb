@@ -9,7 +9,7 @@ Namespace ASPxPivotGrid_OLAPSortBySummary
         Protected Overrides Sub OnInit(ByVal e As EventArgs)
             MyBase.OnInit(e)
             ASPxPivotGrid1.OLAPConnectionString = "provider=MSOLAP;" &
-                "data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;" &
+                "data source=https://demos.devexpress.com/Services/OLAP/msmdpump.dll;" &
                 "initial catalog='Adventure Works DW Standard Edition';" &
                 "cube name='Adventure Works'"
         End Sub

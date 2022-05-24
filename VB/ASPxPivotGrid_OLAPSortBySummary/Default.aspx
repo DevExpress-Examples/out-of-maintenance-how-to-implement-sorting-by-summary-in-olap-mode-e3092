@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb"
     Inherits="ASPxPivotGrid_OLAPSortBySummary._Default" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.1, Version=13.1.14.0,
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.1.0,
     Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid"
     TagPrefix="dx" %>
@@ -16,20 +16,29 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" DataSourceID="AccessDataSource1"
-        OnLoad="ASPxPivotGrid1_Load">
+        <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server"
+        OnLoad="ASPxPivotGrid1_Load" ClientIDMode="AutoID" IsMaterialDesign="False">
             <Fields>
                 <dx:PivotGridField ID="fieldMonth" Area="RowArea" AreaIndex="0"
-                Caption="Month" FieldName="[Date].[Month of Year].[Month of Year]">
+                Caption="Month">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="[Date].[Month of Year].[Month of Year]" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
-                <dx:PivotGridField ID="fieldCountry" Area="ColumnArea" AreaIndex="0" Caption="Country"
-                    FieldName="[Customer].[Country].[Country]">
+                <dx:PivotGridField ID="fieldCountry" Area="ColumnArea" AreaIndex="0" Caption="Country">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="[Customer].[Country].[Country]" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
-                <dx:PivotGridField ID="fieldCity" Area="ColumnArea" AreaIndex="1" Caption="City"
-                    FieldName="[Customer].[City].[City]">
+                <dx:PivotGridField ID="fieldCity" Area="ColumnArea" AreaIndex="1" Caption="City">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="[Customer].[City].[City]" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
-                <dx:PivotGridField ID="fieldSales" Area="DataArea" AreaIndex="0" Caption="Sales"
-                    FieldName="[Measures].[Internet Sales Amount]">
+                <dx:PivotGridField ID="fieldSales" Area="DataArea" AreaIndex="0" Caption="Sales">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="[Measures].[Internet Sales Amount]" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
             </Fields>
         </dx:ASPxPivotGrid>

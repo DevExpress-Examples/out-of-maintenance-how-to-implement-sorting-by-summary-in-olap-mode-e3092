@@ -7,7 +7,7 @@ namespace ASPxPivotGrid_OLAPSortBySummary {
         protected override void OnInit(EventArgs e) {
             base.OnInit(e);
             ASPxPivotGrid1.OLAPConnectionString = "provider=MSOLAP;" + 
-                "data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;" + 
+                "data source=https://demos.devexpress.com/Services/OLAP/msmdpump.dll;" + 
                 "initial catalog='Adventure Works DW Standard Edition';cube name='Adventure Works'";
         }
         protected void ASPxPivotGrid1_Load(object sender, EventArgs e) {
