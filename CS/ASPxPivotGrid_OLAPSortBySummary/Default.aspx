@@ -1,7 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs"
     Inherits="ASPxPivotGrid_OLAPSortBySummary._Default" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.10.0,
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.11.0,
     Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid"
     TagPrefix="dx" %>
